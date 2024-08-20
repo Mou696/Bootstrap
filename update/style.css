@@ -1,5 +1,3 @@
-
-
 .custom-card {
     border: 1px solid #f3f3f300; 
     border-radius: 10px; 
@@ -7,9 +5,18 @@
     margin-bottom: 20px;
     background-color: #7474742f;
     margin-top: 5%;
-  }
+}
 
-nav ul li a{
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; /* Optional: ensures the navbar is visible */
+    padding: 10px 0; /* Optional: adjust padding as needed */
+    border-bottom: 1px solid #ddd; /* Optional: adds a border for distinction */
+}
+
+nav ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
@@ -17,7 +24,7 @@ nav ul li a{
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -26,22 +33,27 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
-
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
 
-body{
+body {
     background: rgb(0, 0, 0);
     color: white;
 }
 
-#header{
+#header {
     width: 100%;
     height: 100vh;
     background-image: url();
     background-size: cover;
     background-position: center;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
